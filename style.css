@@ -1,0 +1,89 @@
+/* style.css - ESCOM Color Theme */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #7cd38f;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+header, nav, footer {
+  background-color: #a6e1a6; /* dark green */
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: yellow;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  color: #006400;
+  margin-top: 20px;
+}
+
+table {
+  width: 95%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f400; /* yellow */
+  color: #000;
+}
+
+td {
+  background-color: #e8ffe8; /* light greenish */
+  padding: 10px;
+  text-align: center;
+}
+
+form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  width: 50%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #006400;
+  color: rgb(156, 198, 138);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #228B22;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Register as a User</h2>
+  <form action="register.php" method="POST">
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>Password:</label><br>
+    <input type="password" name="password" required><br><br>
+
+    <label>Role:</label><br>
+    <select name="role" required>
+      <option value="staff">Staff</option>
+      <option value="fleet_controller">Fleet Controller</option>
+      <option value="manager">Manager</option>
+      <option value="driver">Driver</option>
+    </select><br><br>
+
+    <div id="driverFields" style="display: none;">
+      <label>License Number:</label><br>
+      <input type="text" name="license_number"><br><br>
+
+      <label>Phone Number:</label><br>
+      <input type="text" name="phone"><br><br>
+    </div>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <script>
+    // Show extra fields only when "Driver" is selected
+    const roleSelect = document.querySelector('select[name="role"]');
+    const driverFields = document.getElementById('driverFields');
+
+    roleSelect.addEventListener('change', () => {
+      driverFields.style.display = roleSelect.value === 'driver' ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>
