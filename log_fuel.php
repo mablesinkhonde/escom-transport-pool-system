@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 }
 
 // Get list of vehicles
-$vehicles = $conn->query("SELECT id, registration_number FROM vehicles WHERE status = 'available'");
+$vehiScles = $conn->query("SELECT id, registration_number FROM vehicles WHERE status = 'available'");
 ?>
 
 <!DOCTYPE html>

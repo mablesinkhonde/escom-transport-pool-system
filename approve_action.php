@@ -5,7 +5,7 @@ session_start();
 if ($_SESSION['user_role'] !== 'manager') {
   die("Access denied.");
 }
-
+include("header.php");
 if (!isset($_GET['id']) || !isset($_GET['status'])) {
   die("Invalid request.");
 }
