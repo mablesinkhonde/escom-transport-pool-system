@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+include("header.php");
 // Database connection
 $conn = new mysqli("localhost", "root", "", "escom_transport");
 if ($conn->connect_error) {
