@@ -19,14 +19,14 @@ if (isset($_SESSION['user_role'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Welcome to ESCOM Transport System</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-color: #2e8b57; /* Darker green */
+      background-color: #2e8b57; /* ESCOM green */
       font-family: Arial, sans-serif;
       color: white;
       display: flex;
@@ -45,7 +45,7 @@ if (isset($_SESSION['user_role'])) {
     p {
       font-size: 18px;
       margin-bottom: 30px;
-      max-width: 500px;
+      max-width: 550px;
     }
 
     .buttons a {
@@ -56,7 +56,9 @@ if (isset($_SESSION['user_role'])) {
       background-color: #fff;
       color: #2e8b57;
       font-weight: bold;
+      font-size: 16px;
       transition: background 0.3s, color 0.3s;
+      display: inline-block;
     }
 
     .buttons a:hover {
@@ -73,9 +75,10 @@ if (isset($_SESSION['user_role'])) {
   </style>
 </head>
 <body>
+
   <h1>🚗 Welcome to ESCOM Transport Pool Management System</h1>
   <p>
-    Streamline your transport operations with our digital platform.
+    Streamline your transport operations with our digital platform.<br>
     Request vehicles, track usage, monitor maintenance, and more — all in one place.
   </p>
 
@@ -87,5 +90,7 @@ if (isset($_SESSION['user_role'])) {
   <div class="footer">
     &copy; 2025 ESCOM Transport Department
   </div>
+
 </body>
 </html>
+
