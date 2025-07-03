@@ -3,7 +3,7 @@ session_start();
 if ($_SESSION['user_role'] !== 'admin') {
   die("Access denied.");
 }
-include("menu.php");
+include("header.php");
 
 // Database connection
 $conn = new mysqli("localhost", "root", "", "escom_transport");

@@ -4,7 +4,7 @@ if ($_SESSION['user_role'] !== 'manager') {
   die("Access denied.");
 }
 
-include("menu.php");
+include("header.php");
 $conn = new mysqli("localhost", "root", "", "escom_transport");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);

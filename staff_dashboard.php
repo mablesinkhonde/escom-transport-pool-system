@@ -4,7 +4,7 @@ if ($_SESSION['user_role'] !== 'staff') {
   die("Access denied.");
 }
 
-include("menu.php"); // for navigation
+include("header.php"); // for navigation
 $conn = new mysqli("localhost", "root", "", "escom_transport");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);

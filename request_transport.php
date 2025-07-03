@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("menu.php");
+include("header.php");
 
 // Only staff should access this page
 if ($_SESSION['user_role'] !== 'staff') {

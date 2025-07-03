@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+include("header.php");
 if (isset($_SESSION['user_role'])) {
   switch ($_SESSION['user_role']) {
     case 'staff':

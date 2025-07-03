@@ -1,5 +1,6 @@
 <?php
 session_start();
+include("header.php");
 if ($_SESSION['user_role'] !== 'driver') {
   die("Access denied.");
 }

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("menu.php");
+include("header.php");
 
 if ($_SESSION['user_role'] !== 'staff') {
   die("Access denied.");
